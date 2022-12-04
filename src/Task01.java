@@ -10,11 +10,12 @@ public class Task01 {
         }
         System.out.println("Первоначальный список:");
         System.out.println(myLinkedList);
-        System.out.println("'Перевернутый' список:");
+        System.out.println("Обработка...");
         for (int i = 1; i < myLinkedList.size(); i++) {
-            myLinkedList.addLast(myLinkedList.get(myLinkedList.size()-1-i));
-            myLinkedList.remove(myLinkedList.size()-2-i);
+            myLinkedList.addLast(myLinkedList.get(myLinkedList.size() - 1 - i));
+            myLinkedList.remove(myLinkedList.size() - 2 - i);
         }
+        System.out.println("'Перевернутый' список:");
         System.out.println(myLinkedList);
     }
 }
